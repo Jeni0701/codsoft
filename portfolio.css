@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: rgb(231, 186, 227);
+    padding: 25px;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+/* portfolio */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    padding: 15px;
+    z-index: 1000;
+}
+/* Navbar */
+.nav {
+    list-style-type: none;
+    top: 0;
+    left: 23cm;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    float: right;
+    }
+.nav li {
+    margin-right: 40px;
+   }
+
+.nav li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+h3 {
+    margin-right: 20px;
+    color: rgb(163, 9, 9);
+    }
+
+/* Styles for Home */
+
+  .home {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    height: 100vh;
+    padding: 20px;
+   }
+
+.profile {
+    flex: 0 0 150px; 
+    margin-left: 270px;
+}
+
+.profile img {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10%; 
+}
+.hcontent {
+    flex: 1;
+    margin-left: 200px;
+     
+}
+.hcontent h2 {
+    margin-top: 10px;
+  }
+
+.btn {
+    padding: 10px 10px;
+    margin-right: 10px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+p{
+    margin-top: 10px;
+}
+.btn:last-child {
+    margin-right: 0;
+}
+/* Styles for About */
+.about{
+    
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.profile1 {
+    flex: 0 0 100px; 
+    margin-left: 270px;
+    
+}
+
+.profile1 img{
+    height: 45vh;
+    margin-top: 10px;
+    border-radius: 20%;
+}
+.content h1{
+    margin-bottom: 20px;
+    margin-right: 200px;
+    
+}
+.content{
+    flex: 1;
+    margin-left: 200px;
+    margin-top: 1px;
+}
+
+.box1{
+    height: 400px;
+    width: 250px;
+    margin: 20px;
+    box-shadow: 2px 2px 8px rgb(128, 40, 120);
+    border: 2px solid green;
+    margin-bottom: 100px;
+    border-radius: 10%;
+}
+.box1 i{
+     position: relative; 
+     top: 20px; 
+    left: 2.5cm; 
+    }
+.box1 h3{
+    position: relative;
+    top:4px;
+    text-align: center;
+}
+.about p{
+        margin: 20px;
+        display: inline-block;
+        top:23px;
+        text-align: center;
+    }
+
+.about p{
+    height: 130px;
+    width: 80%;
+    font-weight: bold;
+}
+/* Styles for Skills */
+.skills h5{
+    text-align: center;
+    font-size: 35px;
+    position: relative;
+}
+
+.skills{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.box{
+    height: 350px;
+    width: 250px;
+    margin: 20px;
+    margin-top: 100px;
+    border-radius: 10%;
+    box-shadow: 2px 2px 8px rgb(110, 15, 102);
+    border: 1px solid rgb(231, 186, 227);
+    transition: transform 0.3s ease;
+    
+}
+.box:hover{
+    transform: scale(1.1);
+}
+.box i {
+    position: relative; 
+    top: 20px; 
+    left: 2.5cm; 
+}
+.skills h3{
+    position: relative;
+    top:40px;
+    text-align: center;
+}
+.skills p{
+    position: relative;
+    top:50px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Styles for Contact */
+.contact{
+    height: 100vh;
+    width: 100%;
+    
+}
+.contact h1{
+    text-align: center;
+   }
+.contact form{
+    height: 430px;
+    width: 420px;
+    top: 90px;
+    margin-left: 450px;
+    border: 1px solid black;
+    border-radius: 20%;
+}
+form .input{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 6px;
+    margin: 7px;
+    padding-left: 40px;
+    }
+.input input,button{
+    height: 30px;
+}
+.contact:hover{
+    box-shadow: 8px 8px 8px green;
+}
+.input button{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    box-shadow: 2px 2px 8px rgb(3, 66, 3);
+}
+.contact ul{
+    display: flex;
+    padding-left: 580px;
+    margin-top: 20px;
+    gap: 30px;
+   list-style-type: none;
+   
+}
+.contact a{
+    text-decoration: none;
+}
+.contact i{
+    position: relative;
+    align-items: center;
+    font-size: 30px;
+}
+.contact i:hover{
+    transform: translate(5px);
+    
+}
+
+/* Media queries for responsiveness */
+
+/* Adjustments for tablets */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .nav li {
+        margin-right: 20px;
+    }
+
+    .hcontent {
+        margin-top: 20px;
+    }
+
+    .profile img {
+        width: 80%;
+    }
+
+    .profile1 img {
+        width: 80%;
+    }
+
+    .content,
+    .contact form {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+/* Adjustments for mobile devices */
+@media only screen and (max-width: 480px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .home {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hcontent {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .profile,
+    .profile1 {
+        margin-left: 0;
+    }
+
+    .profile img,
+    .profile1 img {
+        width: 100%;
+    }
+
+    .content {
+        margin-top: 20px;
+    }
+
+    .box1 {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .box {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .contact form {
+        width: 90%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .contact ul {
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .contact li {
+        margin-right: 10px;
+    }
+}
+
